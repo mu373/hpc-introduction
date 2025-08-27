@@ -2,7 +2,7 @@
 #============ Slurm Options ===========
 #SBATCH --job-name=er-graph-sim
 #SBATCH --partition=short
-#SBATCH --time=0-00:3:00
+#SBATCH --time=0-00:1:00
 
 #SBATCH --array=1-11 # This is an array job with 11 tasks
 
