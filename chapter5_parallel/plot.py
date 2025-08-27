@@ -76,10 +76,11 @@ def plot_avg_degree(summary: pd.DataFrame, out_path: str) -> None:
 
     fig, ax = plt.subplots(1, 1, figsize=(4, 3))
     ax.errorbar(p, y, yerr=yerr, fmt="o", capsize=3, label="Mean ± SD")
+
     ax.set_xlabel("p")
     ax.set_ylabel(r"$\bar{k}$")
     ax.set_title("Average degree vs p", loc="left")
-    ax.legend(loc="upper right", frameon=True)
+    ax.legend(loc="lower right", frameon=True)
 
     fig.tight_layout()
     fig.savefig(out_path, bbox_inches="tight")
