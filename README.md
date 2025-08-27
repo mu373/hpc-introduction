@@ -52,3 +52,11 @@ Slides are published [here](https://github.com/mu373/hpc-introduction/blob/main/
 ├── LICENSE
 └── README.md
 ```
+
+
+## License
+- **Slides** (in `/slides`): Creative Commons Attribution 4.0 International (CC BY 4.0).
+  See [`slides/LICENSE`](./slides/LICENSE).
+- **Other files including codes**: MIT License. See [`LICENSE`](./LICENSE).
+
+Unless otherwise noted in a file header, the above applies.
