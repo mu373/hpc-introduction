@@ -44,18 +44,17 @@ def run_simulation(task_id, n_nodes, n_simulations):
     results_list = []
 
     for i in range(n_simulations):
+        print(i)
         # Generate the ER graph
         G = nx.erdos_renyi_graph(n=n_nodes, p=p_this_job)
 
         # Calculate metrics
-        avg_clustering = nx.average_clustering(G)
         avg_degree = np.mean([deg for node, deg in dict(G.degree()).items()])
         
         # Append results for this replication as a dictionary to our list
         results_list.append({
             'p': p_this_job,
             'trial_id': i,
-            'avg_clustering': avg_clustering,
             'avg_degree': avg_degree
         })
 
@@ -87,7 +86,7 @@ if __name__ == "__main__":
 
     # Define fixed simulation parameters
     N_NODES = 1000
-    N_SIMULATIONS = 100 # We repeat the simulation 100 times for each p value
+    N_SIMULATIONS = 20 # We repeat the simulation for multiple times for each p value
 
     # Run the main function
     run_simulation(task_id=task_id, n_nodes=N_NODES, n_simulations=N_SIMULATIONS)
