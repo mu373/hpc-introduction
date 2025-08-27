@@ -28,5 +28,5 @@ source activate /home/ueda.m/conda/bootcamp
 
 # Run program, passing the array task ID as an argument
 echo "Starting job for SLURM_ARRAY_TASK_ID: $SLURM_ARRAY_TASK_ID"
-python3 er_simulation.py $SLURM_ARRAY_TASK_ID
+python3 sim.py $SLURM_ARRAY_TASK_ID
 echo "Job finished."
