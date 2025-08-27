@@ -40,8 +40,8 @@ if ! compgen -G "${INPUT_DIR}/p_*.csv" > /dev/null; then
 fi
 
 # --- Run analysis ---
-echo "[$(date)] Running: python ${PYTHON_SCRIPT} --input-dir ${INPUT_DIR} --out-dir ${OUT_DIR} --n-nodes ${N_NODES}"
-python3 "${PYTHON_SCRIPT}" --input-dir "${INPUT_DIR}" --out-dir "${OUT_DIR}" --n-nodes "${N_NODES}"
+echo "[$(date)] Running: python ${PYTHON_SCRIPT} --input-dir ${INPUT_DIR} --out-dir ${OUT_DIR}"
+python3 "${PYTHON_SCRIPT}" --input-dir "${INPUT_DIR}" --out-dir "${OUT_DIR}"
 
 echo "[$(date)] Job finished. Outputs written to ${OUT_DIR}"
 
