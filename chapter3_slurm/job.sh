@@ -12,7 +12,7 @@
 #=======================================
 
 # Load required module 
-module load anaconda3/2024.06
+module load anaconda3
 
 # Activate any necessary environments
 source activate base
