@@ -7,6 +7,8 @@ This repository includes sample codes for the NetSI PhD Bootcamp 2025 session.
 - Date: August 27, 2025
 - Venue: [Network Science Institute](https://www.networkscienceinstitute.org/)
 
+Slides are published [here](https://github.com/mu373/hpc-introduction/blob/main/introduction-to-hpc.pdf).
+
 ## Goals for this session
 - Get familiar with the concept of parallel computation and HPC clusters
 - Understand how to use modules and conda, and submit jobs with Slurm.
